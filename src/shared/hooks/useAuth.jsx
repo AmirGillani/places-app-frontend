@@ -18,10 +18,10 @@ function useAuth() {
 
     // TOKEN EXPIRATION TIME IN MILISECONDS
 
-    //                          CURRENT TIME + TIME AFTER 1 HOUR
+    //                          CURRENT TIME + TIME AFTER 1 HOUR= 3600000ms
 
     const expiration =
-      previousExpirationTime || new Date().getTime() + 2000;
+      previousExpirationTime || new Date().getTime() + 3600000;
 
     // GET EXACT TIME AFTER 1 HOUR USING DATE CONSTANT
 

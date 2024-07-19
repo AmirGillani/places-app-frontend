@@ -131,6 +131,7 @@ function Auth() {
         );
         
         auth.login(resultData.userId,resultData.token );
+        
       } catch (err) {}
     }
   }
