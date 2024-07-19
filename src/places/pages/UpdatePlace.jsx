@@ -49,7 +49,7 @@ function UpdatePlace() {
     async function fetchPlace() {
 
       const responseData = await sendRequest(
-        `http://localhost:5000/api/places/${placeId}`
+        `https://places-api-phi.vercel.app/api/places/${placeId}`
       );
 
       setPlace(responseData.place);
@@ -70,7 +70,7 @@ function UpdatePlace() {
     event.preventDefault();
 
     await sendRequest(
-      `http://localhost:5000/api/places/${placeId}`,
+      `https://places-api-phi.vercel.app/api/places/${placeId}`,
       "PATCH",
       JSON.stringify({
         title: formState.inputs.title.value,
