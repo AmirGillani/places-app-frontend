@@ -64,7 +64,7 @@ const NewPlace = () => {
     try{
 
       await sendRequest(
-        'http://localhost:5000/api/places',
+        'https://places-api-phi.vercel.app/api/places',
         'POST',
          formData,
         //  SEND THIS HEADER WHILE SENDING REQUEST
