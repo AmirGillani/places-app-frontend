@@ -24,7 +24,7 @@ function UserPlace() {
 
       try{
         const result = await sendRequest(
-          `http://localhost:5000/api/places/user/${userId}`
+          `https://places-api-phi.vercel.app/api/places/user/${userId}`
         );
   
         setUserPlaces(result);
