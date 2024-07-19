@@ -32,7 +32,7 @@ function PlaceItem(props) {
   async function confirmDeletion() {
     try {
       await sendRequest(
-        `http://localhost:5000/api/places/${props.id}`,
+        `https://places-api-phi.vercel.app/api/places/${props.id}`,
         "DELETE",
         null,
         { Authorization: "randomstring " + auth.token }
